@@ -1,0 +1,5 @@
+pre-commit:
+  commands:
+    check:
+      run: npx @biomejs/biome check --write --no-errors-on-unmatched --files-ignore-unknown=true && git update-index --again
+      stage_fixed: true
